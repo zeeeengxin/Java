@@ -1,3 +1,5 @@
+// calculate the sum of all diagnal elements
+
 package test;
 
 public class Diag {
