@@ -17,6 +17,15 @@ public class InsertList {
 		}
 		return oldHead;
 	}
+	public ListNode insertRecursion(ListNode head, int value) {
+		if (head == null || value < head.value) {
+			ListNode newNode = new ListNode(value);
+			newNode.next = head;
+			return newNode;
+		}
+		head.next = insertRecursion(head.next, value);
+		return head;
+	}
 }
 /*	ListNode cur = head;
 	ListNode prev = null;
