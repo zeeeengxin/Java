@@ -14,6 +14,7 @@ public class isBST {
 		return helper(root.left, left, root.key) && 
 				helper(root.right, root.key, right);
 	}
+	
 	private int tmp = Integer.MIN_VALUE;
 	public boolean isBSTree2(TreeNode root) {
 		if (root == null) {
